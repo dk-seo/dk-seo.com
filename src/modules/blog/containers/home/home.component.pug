@@ -1,0 +1,23 @@
+sb-layout-blog
+    
+    sb-clean-blog-header(
+        backgroundImage='url("assets/img/graphics.png")',
+        heading='Deok-Hwa Seo',
+        subHeading='Software Engineer',
+        [siteHeading]='true'
+    )
+
+    ng-container(
+        *ngIf='posts$ | async as posts'
+    )
+        .container
+            .row
+                .col-lg-8.col-md-10.mx-auto
+                    .post-preview(
+                        *ngFor='let post of posts'
+                    )
+                        a([routerLink]='post.slug')
+                            h2.post-title {{post.heading}}
+                            h3.post-subtitle {{post.subHeading}}
+                                
+                        p.post-meta {{post.meta}}
