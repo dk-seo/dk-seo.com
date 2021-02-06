@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sb-clean-blog-angular": {
+    "dk-seo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sb-clean-blog-angular:build"
+            "browserTarget": "dk-seo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sb-clean-blog-angular:build:production"
+              "browserTarget": "dk-seo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sb-clean-blog-angular:build"
+            "browserTarget": "dk-seo:build"
           }
         },
         "test": {
@@ -129,18 +129,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sb-clean-blog-angular:serve"
+            "devServerTarget": "dk-seo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "sb-clean-blog-angular:serve:production"
+              "devServerTarget": "dk-seo:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "sb-clean-blog-angular",
+  "defaultProject": "dk-seo",
   "cli": {
     "analytics": "1b38752a-78cd-445f-b84a-c73a1648eb69"
   }

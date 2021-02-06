@@ -1,7 +1,7 @@
 const version = require('../version.js');
 const sh = require('shelljs');
 
-const imageName = 'sb-clean-blog-angular';
+const imageName = 'dk-seo';
 
 sh.exec(`docker build -t ${imageName}:latest -t ${imageName}:${version} .`);
 
