@@ -7,8 +7,6 @@ sb-layout-blog
         [siteHeading]='true'
     )
 
-    sb-demo-info(*ngIf='true')
-
     ng-container(
         *ngIf='posts$ | async as posts'
     )
