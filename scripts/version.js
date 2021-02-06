@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const pjPath = path.resolve(path.dirname(__filename), '../package.json');
 const versionPath = path.resolve(path.dirname(__filename), '../version');
-const distVersionPath = path.resolve(path.dirname(__filename), '../dist/sb-clean-blog-angular/assets/version');
+const distVersionPath = path.resolve(path.dirname(__filename), '../dist/dk-seo/assets/version');
 
 const pj = require(pjPath);
 
