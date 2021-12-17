@@ -17,6 +17,7 @@ export class CleanBlogHeaderComponent implements OnInit {
     safeBackgroudImage!: SafeStyle;
 
     constructor(private domSanitizer: DomSanitizer) {}
+
     ngOnInit() {
         this.safeBackgroudImage = this.domSanitizer.bypassSecurityTrustStyle(this.backgroundImage);
     }
