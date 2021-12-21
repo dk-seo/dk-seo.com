@@ -96,3 +96,21 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+## Steps
+
+### Project Set up
+
+NX Workspace
+
+```bash
+npx create-nx-workspace workspace-name --preset=empty --cli=angular
+```
+
+Add `nest.js` and `Angular`
+
+```bash
+ng add @nrwl/nest --defaults
+
+ng add @nrwl/angular --defaults
+```
