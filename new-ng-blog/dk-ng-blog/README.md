@@ -114,3 +114,8 @@ ng add @nrwl/nest --defaults
 
 ng add @nrwl/angular --defaults
 ```
+
+Then created an API app.
+```bash
+ng generate @nrwl/nest:app api 
+```
