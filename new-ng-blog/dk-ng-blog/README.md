@@ -119,3 +119,8 @@ Then created an API app.
 ```bash
 ng generate @nrwl/nest:app api 
 ```
+
+For the shared library,
+```bash
+ng generate @nrwl/workspace:library types
+```
