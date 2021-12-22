@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService, BlogEntry } from './services/data.service';
+import { DataService } from './services/data.service';
+import { BlogEntry } from '@dk-ng-blog/types';
 
 @Component({
   selector: 'dk-ng-blog-root',

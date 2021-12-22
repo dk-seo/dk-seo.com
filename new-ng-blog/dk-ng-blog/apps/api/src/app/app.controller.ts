@@ -1,6 +1,7 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post } from '@nestjs/common';
 
-import { AppService, BlogEntry } from './app.service';
+import { AppService } from './app.service';
+import { BlogEntry } from '@dk-ng-blog/types';
 
 @Controller('entries')
 export class AppController {

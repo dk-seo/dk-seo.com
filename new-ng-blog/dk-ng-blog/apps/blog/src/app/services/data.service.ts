@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BlogEntry } from '@dk-ng-blog/types';
 
-export interface BlogEntry {
-  title: string;
-  body: string;
-  timestamp?: Date;
-}
+// export interface BlogEntry {
+//   title: string;
+//   body: string;
+//   timestamp?: Date;
+// }
 
 @Injectable({
   providedIn: 'root'

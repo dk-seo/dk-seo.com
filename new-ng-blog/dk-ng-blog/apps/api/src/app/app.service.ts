@@ -1,10 +1,11 @@
 import { Injectable } from '@nestjs/common';
+import { BlogEntry } from '@dk-ng-blog/types';
 
-export interface BlogEntry {
-  title: string;
-  body: string;
-  timestamp?: Date;
-}
+// export interface BlogEntry {
+//   title: string;
+//   body: string;
+//   timestamp?: Date;
+// }
 
 @Injectable()
 export class AppService {
